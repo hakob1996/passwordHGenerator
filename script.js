@@ -6,13 +6,16 @@ function password1(){
     var allTogether = "qwer[]|.$#@!%^&*(tyuiopafgFGHJKLZXhjklzxcvbASDCVBNM1234567890)_-=+/?<>,{}";
     var generated = "";
     var question = prompt("How many characters would you like?");
-    var askLowerCase = confirm("Press OK if You would like just lowercase");
+    
+    
+
     
 
 
 
-   
- 
+
+if (question >= 0){
+var askLowerCase = confirm("Press OK if You would like just lowercase");
 function together(){
         for(var i = 0, n = question; i < question; i++){
             generated += allTogether.charAt(Math.floor(Math.random() * n));  
@@ -89,7 +92,6 @@ function number(){
      }
 
   
-    }
 
     function copy1(){
        
@@ -97,4 +99,13 @@ function number(){
         copy.select();
         document.execCommand("copy");
     }
+}
+
+else{
+    alert("It was not a number:) please make sure to write a number )");
+}
+}
         
+
+
+
